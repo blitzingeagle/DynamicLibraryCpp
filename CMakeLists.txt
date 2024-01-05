@@ -22,4 +22,4 @@ else()
 endif()
 
 # Link against the shared library
-target_link_libraries(myprog PRIVATE ${CMAKE_SOURCE_DIR}/mylib/build/lib/libexample_lib${LIB_EXTENSION})
+target_link_libraries(myprog PRIVATE ${CMAKE_SOURCE_DIR}/mylib/build/lib/libmylib${LIB_EXTENSION})

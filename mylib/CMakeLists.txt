@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(example_dll)
+project(mylib)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -9,9 +9,9 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 # Source files
 set(SOURCE_FILES src/example.cpp)
 
-# Create the DLL/SO
-add_library(example_lib SHARED ${SOURCE_FILES})
+# Create the DLL/SO/DYLIB
+add_library(mylib SHARED ${SOURCE_FILES})
 
 # Include directories
-target_include_directories(example_lib PRIVATE include)
+target_include_directories(mylib PRIVATE include)
 
