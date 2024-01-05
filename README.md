@@ -42,7 +42,7 @@ cmake --build .
 Now to execute the program, run the executable created by the build.
 
 ```sh
-./myprog
+./bin/myprog
 ```
 
 The program will run using a library function from mylib.
